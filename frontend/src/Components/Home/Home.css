@@ -1,0 +1,83 @@
+/* Home Page Container */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 80vh; /* Ensures proper vertical alignment */
+    background: #f4f6f9; /* Light Gray Background */
+    padding: 20px;
+}
+
+/* Greeting Message */
+.home-container h2 {
+    font-size: 28px;
+    color: #2c3e50; /* Dark Blue */
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.img{
+    height: 250px;
+    margin: 15px;
+    border-radius: 10px;
+}
+
+/* Welcome Message */
+.home-container p {
+    font-size: 18px;
+    color: #34495e; /* Slightly Darker Gray */
+    margin-bottom: 20px;
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    gap: 15px;
+}
+
+/* Home Page Buttons */
+.home-button {
+    background: #3498db; /* Professional Blue */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+/* Hover Effect */
+.home-button:hover {
+    background: #2980b9; /* Slightly Darker Blue */
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container h2 {
+        font-size: 24px;
+    }
+
+    .home-container p {
+        font-size: 16px;
+    }
+
+    .button-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .home-button {
+        font-size: 16px;
+        padding: 10px 18px;
+    }
+
+    .img{
+        height: 140px;
+    }
+}

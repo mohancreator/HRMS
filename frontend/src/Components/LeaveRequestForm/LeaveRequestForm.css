@@ -1,0 +1,82 @@
+/* Leave Request Form Container */
+.leave-form-container {
+    background: #ffffff;
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-left: 5px solid #0073e6;
+}
+
+/* Form Title */
+.leave-form-container h3 {
+    color: #2c3e50;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Form Input Fields */
+.inputs-form {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 2px solid #0073e6;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease-in-out;
+}
+
+.inputs-form:focus {
+    border-color: #005bb5;
+    box-shadow: 0 0 6px rgba(0, 115, 230, 0.3);
+}
+
+/* Submit Button */
+.submitreq {
+    width: 100%;
+    padding: 12px;
+    background: #0073e6;
+    color: #ffffff;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    margin-top: 10px;
+}
+
+.submitreq:hover {
+    background: #005bb5;
+}
+
+/* Success and Error Messages */
+.success-message {
+    color: green;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .leave-form-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .inputs-form {
+        font-size: 14px;
+    }
+
+    .submitreq {
+        font-size: 14px;
+    }
+}
